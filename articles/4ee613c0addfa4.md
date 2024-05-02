@@ -2,7 +2,7 @@
 title: "Nuxt3を静的ファイルとしてビルドし、.NET Coreに表示する"
 emoji: "😀"
 type: "tech"
-topics: [csharp, nuxt3]
+topics: [.net, nuxt3]
 published: true
 ---
 Nuxt3をViewとして.NET Coreにデプロイした作業備忘録。
