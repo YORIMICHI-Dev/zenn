@@ -119,5 +119,5 @@ dotnet publish
 ```
 その後、Releaseディレクトリに作成されたexeファイルを起動する。
 ```console
-.\bin\Release\net8.0\publish\test2.exe
+.\bin\Release\net8.0\publish\<project-name>.dll
 ```
