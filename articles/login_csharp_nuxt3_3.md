@@ -1,6 +1,6 @@
 ---
-title: "Nuxt3 + .NET Core + Azureで作るログイン機能サンプル：2. Nuxt3からログインしてみる"
-emoji: ""
+title: "Nuxt3 + .NET Core + Azureで作るログイン機能サンプル：3. Nuxt3からログインする"
+emoji: "🫠"
 type: "tech"
 topics: [dotnet, nuxt3, azure]
 published: false
