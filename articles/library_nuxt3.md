@@ -3,7 +3,7 @@ title: "Nuxt3でよく使うライブラリ"
 emoji: "👾"
 type: "tech"
 topics: [nuxt3]
-published: true
+published: false
 ---
 Nuxt3でよく使っているライブラリの共有。
 ## Pinia
