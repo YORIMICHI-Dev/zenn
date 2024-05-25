@@ -9,6 +9,7 @@ Nuxt3でよく使っているライブラリのメモ。
 つどつど追加
 # 状態管理
 ## Pinia
+Vue・Nuxt3を使う場合はほぼ必須
 Nuxt3からインストールする場合
 https://pinia.vuejs.org/ssr/nuxt.html
 
@@ -30,9 +31,9 @@ https://quasar.dev/
 個人的に少し使いづらい
 https://perfectscrollbar.com/
 
-# Use Fook系
+# Use Hook系
 ## VueUse
-Use Fook系のライブラリ群
+Use Hook系のライブラリ群
 Event系を実装する場合に重宝する
 https://vueuse.org/
 
@@ -53,11 +54,23 @@ yupのバリデーションの状態管理に使う
 https://vee-validate.logaretm.com/v3/
 
 # データ変換
+## Lodash
+データ変換のライブラリ群
+https://lodash.com/
+
 ## date-fns
 Dateを臨機応変に取り扱う
 https://date-fns.org/
 
 # 認証・認可
-## msal
+## @azure/msal-browser
 Azure Entra IDによる認証
+https://www.npmjs.com/package/@azure/msal-browser
 https://github.com/AzureAD/microsoft-authentication-library-for-js
+
+# マップ表示
+## mapbox
+マップの表示・操作が容易にできる
+緯度・経度上に3Dモデルを表示できる
+https://docs.mapbox.com/mapbox-gl-js/guides
+https://www.npmjs.com/package/mapbox-gl
