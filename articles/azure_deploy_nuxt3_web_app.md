@@ -139,11 +139,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: package.json nstall
-        run: npm install
-
       - name: Build
-        run: npm run build
+        run: |
+          npm install
+          npm run build
+          rm -rf node_modules
 
       - name: Deploy
         uses: azure/webapps-deploy@v3
