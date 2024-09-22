@@ -78,12 +78,12 @@ package.jsonにNuxt3起動コマンドを追加する。
 新規にAzure Web App Serviceを作成する。
 作成に必要な設定として、ランタイムストックとデプロイについて指定する。
 ランタイムストックは特に指定がなければNode 20 LTSを指定する。
-![](/images/azure_deploy_nuxt3_web_app/スライド1.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide1.png)
 
 続いてデプロイについて、継続的デプロイを選択するとGithub Actionsに使用するymlファイルが作成されるが、
 この後Github Actionsから設定するため、ここでは継続的デプロイは無効化する。
 また認証方法は発行プロファイルを使用するため基本認証にする。
-![](/images/azure_deploy_nuxt3_web_app/スライド2.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide2.png)
 
 ### Azure Web App Serviceの確認
 作成が完了したら、URLからAzure Web App Serviceにアクセスできるか確認する。
@@ -94,7 +94,7 @@ Web App ServiceにNuxt3をデプロイするときに、起動するコマンド
 ```console
 npm run start
 ```
-![](/images/azure_deploy_nuxt3_web_app/スライド3.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide3.png)
 
 # Github Actions
 ## Github Actionsの設定
@@ -182,8 +182,8 @@ packageはenvに指定したAZURE_WEBAPP_PACKAGE_PATHを使用。
 作成後、Settings -> Secrets and variables -> Actionsに移動し、New Repository SecretsからSecretsを作成する。
 
 発行プロファイルはWeb App Serviceの発行プロファイルのダウンロードから入手して貼り付ける。
-![](/images/azure_deploy_nuxt3_web_app/スライド4.JPG)
-![](/images/azure_deploy_nuxt3_web_app/スライド5.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide4.png)
+![](/images/azure_deploy_nuxt3_web_app/slide5.png)
 
 ## GithubにNuxt3をpush
 設定が終わったらNuxt3をGithubのレポジトリにデプロイする。
@@ -196,7 +196,7 @@ git remote add origin <Repository URL>
 git push -u origin main
 ```
 Github Actionsが実行されるため、完了するまで待機。
-![](/images/azure_deploy_nuxt3_web_app/スライド6.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide6.png)
 
 完了したらWeb App ServiceのURLからNuxt3のページが表示されるか確認する。
-![](/images/azure_deploy_nuxt3_web_app/スライド7.JPG)
+![](/images/azure_deploy_nuxt3_web_app/slide7.png)
